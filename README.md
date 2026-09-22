@@ -30,7 +30,7 @@ docs/event_schema.md           схема событий (заполнить)
 ```
 
 ```bash
-pip install -e ".[dev]"
+pip install -r requirements.txt   # или: make install (все команды: make help)
 uvicorn server.app:app --reload         # сервер
 python client/python_logger.py --simulate 20   # 20 синтетических сессий
 python analysis/analyze.py && streamlit run dashboard/app.py
